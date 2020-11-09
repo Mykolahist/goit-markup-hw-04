@@ -120,6 +120,38 @@ p {
 .contacts:focus {
   color: var(--accent);
 }
+.contacts::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contacts.envelope::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../images/icons/envelope\(hover\).svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contacts.smartphone::before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../images/icons/smartphone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .navigation.current {
   color: var(--accent);
 }
@@ -290,8 +322,7 @@ p {
   color: var(--black-text);
 }
 .employment {
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
@@ -299,6 +330,25 @@ p {
   letter-spacing: 0.03em;
   color: var(--gray-text);
 }
+.links {
+  padding: 0;
+  border: none;
+}
+.links-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+  /* margin-right: 34px; */
+  margin-bottom: 42px;
+}
+.links:not(:last-child) {
+  margin-right: 34px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
 /* подвал */
 footer {
   background-color: var(--dark-gray);
