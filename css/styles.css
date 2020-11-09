@@ -122,37 +122,8 @@ p {
 .contacts:focus {
   color: var(--accent);
 }
-.contacts::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
+.contacts-icon {
   margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.contacts.envelope::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url("../images/icons/envelope\(hover\).svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.contacts.smartphone::before {
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url("../images/icons/smartphone.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .navigation.current {
   color: var(--accent);
@@ -352,8 +323,8 @@ p {
 .social > li:not(:last-child) {
   margin-right: 10px;
 }
-.social-links:hover .social-icons,
-.social-links:focus .social-icons {
+.social-links:hover .links-icons,
+.social-links:focus .links-icons {
   fill: var(--white);
 }
 .social-links:hover,
