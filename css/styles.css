@@ -7,6 +7,7 @@ text color:
 #2196F3 - accent
 #757575 - text paragraph
 #ffffff - hero
+#AFB1B8 - social links
 color: rgba(255, 255, 255, 0.6); - footer contact */
 
 :root {
@@ -16,6 +17,7 @@ color: rgba(255, 255, 255, 0.6); - footer contact */
   --light-gray: #f5f4fa;
   --black-text: #212121;
   --gray-text: #757575;
+  --social-links: #afb1b8;
 }
 
 /* утилиты */
@@ -227,8 +229,6 @@ p {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--light-gray);
-
-  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -305,6 +305,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white);
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -322,31 +323,42 @@ p {
   color: var(--black-text);
 }
 .employment {
-  padding-bottom: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--gray-text);
-}
-.links {
-  padding: 0;
-  border: none;
-}
-.links-icon {
-  width: 20px;
-  height: 20px;
-  margin-top: 16px;
-  /* margin-right: 34px; */
-  margin-bottom: 42px;
-}
-.links:not(:last-child) {
-  margin-right: 34px;
 }
 .social {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
+}
+.social-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--social-links);
+  background-color: var(--white);
+}
+.links-icons {
+  width: 20px;
+  height: 20px;
+}
+.social > li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-links:hover .social-icons,
+.social-links:focus .social-icons {
+  fill: var(--white);
+}
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--accent);
 }
 
 /* подвал */
