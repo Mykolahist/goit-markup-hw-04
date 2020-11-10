@@ -66,7 +66,7 @@ p {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.192;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--black-text);
   text-decoration: none;
@@ -75,7 +75,7 @@ p {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.192;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent);
   text-decoration: none;
@@ -94,7 +94,7 @@ p {
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--black-text);
   text-decoration: none;
@@ -108,14 +108,12 @@ p {
   align-items: center;
   margin-left: auto;
 }
-.schedule-contacts .item + .item {
-  margin-left: 50px;
-}
 .contacts {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--gray-text);
   text-decoration: none;
@@ -124,13 +122,19 @@ p {
 .contacts:focus {
   color: var(--accent);
 }
-.contacts-icon {
-  /* display: flex;
-  align-items: center; */
-  margin-right: 10px;
-}
 .navigation.current {
   color: var(--accent);
+}
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--gray-text);
+}
+.schedule-contacts li:not(:last-child) {
+  margin-right: 30px;
+}
+.contacts:hover .contacts-icon,
+.contacts:focus .contacts-icon {
+  fill: var(--accent);
 }
 
 /* блок герой */
@@ -223,7 +227,7 @@ p {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.14
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text);
@@ -241,13 +245,13 @@ p {
   padding-bottom: 94px;
 }
 .job-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
-  margin-bottom: 50px;
 }
 .job-schedule {
   display: flex;
@@ -267,7 +271,7 @@ p {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
@@ -292,7 +296,7 @@ p {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
@@ -301,7 +305,7 @@ p {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -324,9 +328,6 @@ p {
   width: 20px;
   height: 20px;
 }
-.social > li:not(:last-child) {
-  margin-right: 10px;
-}
 .social-links:hover .links-icons,
 .social-links:focus .links-icons {
   fill: var(--white);
@@ -334,6 +335,51 @@ p {
 .social-links:hover,
 .social-links:focus {
   background-color: var(--accent);
+}
+
+/* блок коиенты */
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+.customers-schedule {
+  display: flex;
+}
+.customers-links {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-links);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.customers-icons {
+  fill: var(--social-links);
+}
+.customers-schedule > li:not(:last-child) {
+  margin-right: 30px;
+}
+.customers-links:hover .customers-icons,
+.customers-links:focus .customers-icons {
+  fill: var(--accent);
+}
+.customers-links:hover,
+.customers-links:focus {
+  background-color: var(--white);
+}
+.customers-links:hover,
+.customers-links:focus {
+  border-color: var(--accent);
 }
 
 /* подвал */
@@ -348,7 +394,7 @@ footer {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.192;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white);
   text-decoration: none;
@@ -380,6 +426,51 @@ footer {
   text-decoration: none;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-general {
+  display: flex;
+}
+.footer-pack {
+  display: flex;
+  flex-direction: column;
+}
+.appeal {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+.appeal-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.schedule-socials {
+  display: flex;
+  justify-content: flex-start;
+}
+.schedule-socials> li:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-socials {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials:hover .links-icons,
+.footer-socials:focus .links-icons {
+  fill: var(--white);
+}
+.footer-socials:hover,
+.footer-socials:focus {
+  background-color: var(--accent);
 }
 
 /* блок фильтры */
@@ -456,4 +547,9 @@ footer {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
