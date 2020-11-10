@@ -105,12 +105,14 @@ p {
 }
 .schedule-contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .schedule-contacts .item + .item {
   margin-left: 50px;
 }
 .contacts {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -123,6 +125,8 @@ p {
   color: var(--accent);
 }
 .contacts-icon {
+  /* display: flex;
+  align-items: center; */
   margin-right: 10px;
 }
 .navigation.current {
