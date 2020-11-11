@@ -477,10 +477,9 @@ footer {
 }
 
 /* блок фильтры */
-.line {
-  display: flex;
-  border: 1px solid #ECECEC;
-  flex-grow: 1;
+
+.header {
+   border-bottom: 1px solid #ECECEC;
 }
 .button {
   font-family: Roboto, sans-serif;
