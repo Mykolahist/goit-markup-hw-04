@@ -328,6 +328,9 @@ p {
   width: 20px;
   height: 20px;
 }
+.social > li:not(:last-child) {
+  margin-right: 10px;
+}
 .social-links:hover .links-icons,
 .social-links:focus .links-icons {
   fill: var(--white);
@@ -474,6 +477,11 @@ footer {
 }
 
 /* блок фильтры */
+.line {
+  display: flex;
+  border: 1px solid #ECECEC;
+  flex-grow: 1;
+}
 .button {
   font-family: Roboto, sans-serif;
   font-weight: 500;
